@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo {
+  width: 100px;
+}
+.log-form {
+  background: url("img/bg-main.jpg") no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-div {
+  border-radius: 15px;
+}
+
+.form input {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form textarea {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    width: 100%;
+  }
+  .form input {
+    width: 70%;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+small {
+  color: red;
+  display: none;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .row {
+    width: 100%;
+  }
+  .form input {
+    width: 60%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .row {
+    width: 70%;
+  }
+  .form input {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .row {
+    width: 60%;
+  }
+  .form input {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .row {
+    width: 50%;
+  }
+  .form input {
+    width: 60%;
+  }
+}
+
+/*Animation for background*/
+.log-form {
+  animation-name: bgSlide;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes bgSlide {
+  0% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/* Animation for form-div*/
+.form-div {
+  animation-name: formDivSlide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes formDivSlide {
+  0% {
+    transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    opacity: 1;
+  }
+}

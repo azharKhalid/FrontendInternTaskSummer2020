@@ -1,0 +1,132 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Beautify This -->
+    <div class="log-form container-fluid">
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-sm-12 form-div text-center bg-white py-2">
+            <img src="img/mainImage.png" class="logo m-3" alt="" />
+            <form class="form py-2" action="successPage.html">
+              <div class="form-group mx-auto">
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailSmall">Please enter an valid email.</small>
+              </div>
+              <div class="form-group mx-auto">
+                <input
+                  id="mobileNo"
+                  type="number"
+                  class="form-control"
+                  placeholder="Enter Mobile no"
+                />
+                <small id="mobileSmall"
+                  >Enter only numeric value.
+                  <br />
+                  Mobile no needs to be atleast 10 digits long.</small
+                >
+              </div>
+              <div class="form-group mx-auto">
+                <input
+                  id="password1"
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-group mx-auto">
+                <input
+                  id="password2"
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Confirm Password"
+                />
+                <small id="passwordSmall">Both Passwords should match.</small>
+              </div>
+              <div class="form-group mx-auto">
+                <textarea
+                  class="rounded form-control w-75"
+                  name="message"
+                  id="message"
+                  cols="20"
+                  rows="3"
+                  placeholder="Enter message"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label class="mr-1" for="age">Age :</label>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    name="customRadio"
+                    id="customRadio1"
+                    checked
+                  />
+                  <label class="custom-control-label" for="customRadio1"
+                    >Above 18</label
+                  >
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input
+                    type="radio"
+                    class="custom-control-input"
+                    name="customRadio"
+                    id="customRadio2"
+                  />
+                  <label class="custom-control-label" for="customRadio2"
+                    >Below 18</label
+                  >
+                </div>
+              </div>
+              <button id="submit" type="submit" class="btn btn-success">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Beautify Ends -->
+
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
