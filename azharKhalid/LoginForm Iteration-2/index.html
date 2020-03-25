@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container bg-white w-75 my-5">
+      <div class="row">
+        <div class="col form-col">
+          <img
+            src="img/mainImage.png"
+            width="140"
+            height="60"
+            alt=""
+            class="m-3"
+          />
+          <form class="form py-4">
+            <!--Email field-->
+            <div class="form-group mx-auto">
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+              <small id="emailSmall">Please enter an valid email.</small>
+            </div>
+            <!--Mobile Number field-->
+            <div class="form-group mx-auto">
+              <input
+                id="mobileNo"
+                type="number"
+                class="form-control"
+                placeholder="Enter Mobile no"
+              />
+              <small id="mobileSmall"
+                >Enter only numeric value.
+                <br />
+                Mobile no needs to be atleast 10 digits long.</small
+              >
+            </div>
+            <!--Password field-->
+            <div class="form-group mx-auto">
+              <input
+                id="password1"
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+            <!--Confirm Password field-->
+            <div class="form-group mx-auto">
+              <input
+                id="password2"
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Confirm Password"
+              />
+              <small id="passwordSmall1">Both Passwords should match.</small>
+              <small id="passwordSmall2">Passwords can't be left empty.</small>
+            </div>
+            <!--Textarea field-->
+            <div class="form-group mx-auto">
+              <textarea
+                class="rounded form-control"
+                name="message"
+                id="message"
+                cols="20"
+                rows="3"
+                placeholder="Enter message"
+              ></textarea>
+            </div>
+            <!--Radio field-->
+            <div class="form-group mx-auto">
+              <label class="mr-1" for="age">Age :</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input
+                  type="radio"
+                  class="custom-control-input"
+                  name="customRadio"
+                  id="customRadio1"
+                  checked
+                />
+                <label class="custom-control-label" for="customRadio1"
+                  >Above 18</label
+                >
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input
+                  type="radio"
+                  class="custom-control-input"
+                  name="customRadio"
+                  id="customRadio2"
+                />
+                <label class="custom-control-label" for="customRadio2"
+                  >Below 18</label
+                >
+              </div>
+            </div>
+            <!--Submit button-->
+            <button
+              id="submit"
+              type="submit"
+              class="btn btn-success w-50 mx-auto"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col imageCol">
+          <img id="vectorImage" src="img/mainVector.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

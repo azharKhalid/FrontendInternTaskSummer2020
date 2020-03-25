@@ -1,0 +1,73 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #f0f0f0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+small {
+  display: none;
+  color: red;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-control {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 2px solid black;
+}
+#vectorImage {
+  width: 100%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .imageCol {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .imageCol {
+    width: 100%;
+    margin: 60px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  #vectorImage {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #vectorImage {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
