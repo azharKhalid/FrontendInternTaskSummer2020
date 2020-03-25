@@ -7,6 +7,7 @@ document.getElementById("submit").addEventListener("click", event => {
   let mobileNo = document.getElementById("mobileNo").value;
   let password1 = document.getElementById("password1").value;
   let password2 = document.getElementById("password2").value;
+
   //Function for validating email
   validateEmail(email);
   //Function for validating mobile Number
@@ -21,7 +22,6 @@ document.getElementById("submit").addEventListener("click", event => {
   ) {
     window.location.href = "successPage.html";
   } else {
-    return;
   }
 });
 
