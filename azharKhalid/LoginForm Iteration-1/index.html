@@ -21,9 +21,11 @@
     <div class="log-form container-fluid">
       <div class="container d-flex justify-content-center">
         <div class="row">
+          <!--Form container-->
           <div class="col-sm-12 form-div text-center bg-white py-2">
             <img src="img/mainImage.png" class="logo m-3" alt="" />
-            <form class="form py-2" action="successPage.html">
+            <form class="form py-2">
+              <!--Email field-->
               <div class="form-group mx-auto">
                 <input
                   id="email"
@@ -34,6 +36,7 @@
                 />
                 <small id="emailSmall">Please enter an valid email.</small>
               </div>
+              <!--Mobile Number field-->
               <div class="form-group mx-auto">
                 <input
                   id="mobileNo"
@@ -47,6 +50,7 @@
                   Mobile no needs to be atleast 10 digits long.</small
                 >
               </div>
+              <!--Password field-->
               <div class="form-group mx-auto">
                 <input
                   id="password1"
@@ -56,6 +60,7 @@
                   placeholder="Password"
                 />
               </div>
+              <!--Confirm Password field-->
               <div class="form-group mx-auto">
                 <input
                   id="password2"
@@ -64,8 +69,12 @@
                   id="exampleInputPassword1"
                   placeholder="Confirm Password"
                 />
-                <small id="passwordSmall">Both Passwords should match.</small>
+                <small id="passwordSmall1">Both Passwords should match.</small>
+                <small id="passwordSmall2"
+                  >Passwords can't be left empty.</small
+                >
               </div>
+              <!--Textarea field-->
               <div class="form-group mx-auto">
                 <textarea
                   class="rounded form-control w-75"
@@ -76,6 +85,7 @@
                   placeholder="Enter message"
                 ></textarea>
               </div>
+              <!--Radio field-->
               <div class="form-group">
                 <label class="mr-1" for="age">Age :</label>
                 <div class="custom-control custom-radio custom-control-inline">
@@ -102,6 +112,7 @@
                   >
                 </div>
               </div>
+              <!--Submit button-->
               <button id="submit" type="submit" class="btn btn-success">
                 Submit
               </button>
